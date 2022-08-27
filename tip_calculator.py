@@ -1,0 +1,7 @@
+print("Welcome to Bello's Tip calculator")
+total_bill = input("What is the total bill? ")
+tip = input("What percentage tip would you like to give? 10, 12, 15, 20? ")
+number_of_people_splitting_bill = input("How many people to split the bill? ")
+how_much_to_pay = ( float(total_bill)/int(number_of_people_splitting_bill)) * (1+(int(tip)/100))
+how_much_to_pay = round(how_much_to_pay, 2)
+print(f"Each person should pay: ${how_much_to_pay}")
