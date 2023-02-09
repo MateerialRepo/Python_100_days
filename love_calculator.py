@@ -21,12 +21,12 @@ for w in "true":
 for x in "love":
     second_num += both_names_lower.count(x)
 
-score = str(first_num) + str(second_num)
-score = int(score)
+score_string = str(first_num) + str(second_num)
+score = int(score_string)
 
-if score < 10 or score > 90:
+if (score < 10) or (score > 90):
     print("Your score is ", score, ". You match like coke and gala")
 elif 40 <= score <= 50:
-    print("Your score is ", score, ". You are alright together")
+    print(f"Your score is {score}, You are alright together")
 else:
     print("Your score is ", score)
