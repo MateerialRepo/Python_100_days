@@ -25,21 +25,21 @@ _______________''.--o/___  \_______________(_)___________
 
 
 print("Welcome to Treasure Island.\nYour mission is to find the missing Treasure")
-direction = input("You are at a cross road. Do you go 'left' or 'right'? ")
-if direction.lower() == "left":
+direction = input("You are at a cross road. Do you go 'left' or 'right'? ").lower()
+if direction == "left":
     print("You come to a lake. There is an island in the middle of the lake.")
     lake_choice = input("Type 'wait' to wait for a boat or 'swim' to swim across the lake. ")
     if lake_choice.lower() == "wait":
         print("You arrive at the island. You step of the boat and face a house with 3 doors")
         print("One is red, one is yellow and one is blue.")
-        door_choice = input("Which of the colors do you choose? ")
-        if door_choice.lower() == "red":
+        door_choice = input("Which of the colors do you choose? ").lower()
+        if door_choice == "red":
             print("You are engulfed by fiery fire!!!\n")
             print("Game Over")
-        elif door_choice.lower() == "blue":
+        elif door_choice == "blue":
             print("You are attacked by a swarm of bees!!!\n")
             print("Game Over")
-        elif door_choice.lower() == "yellow":
+        elif door_choice == "yellow":
             print("You found the treasure!!!")
             print("You win!!!")
         else:
