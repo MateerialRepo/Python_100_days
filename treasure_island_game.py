@@ -1,4 +1,29 @@
 # link to the flowchart https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+# asci art from ascii.co.uk/art
+print('''
+  ___ __ 
+   (_  ( . ) )__                  '.    \   :   /    .'
+     '(___(_____)      __           '.   \  :  /   .'
+                     /. _\            '.  \ : /  .'
+                .--.|/_/__      -----____   _  _____-----
+_______________''.--o/___  \_______________(_)___________
+       ~        /.'o|_o  '.|  ~                   ~   ~
+  ~            |/    |_|  ~'         ~
+               '  ~  |_|        ~       ~     ~     ~
+      ~    ~          |_|O  ~                       ~
+             ~     ___|_||_____     ~       ~    ~
+   ~    ~      .'':. .|_|A:. ..::''.
+             /:.  .:::|_|.\ .:.  :.:\   ~
+  ~         :..:. .:. .::..:  .:  ..:.       ~   ~    ~
+             \.: .:  :. .: ..:: .lcf/
+    ~      ~      ~    ~    ~         ~
+               ~           ~    ~   ~             ~
+        ~         ~            ~   ~                 ~
+   ~                  ~    ~ ~                 ~
+''')
+
+
 print("Welcome to Treasure Island.\nYour mission is to find the missing Treasure")
 direction = input("You are at a cross road. Do you go 'left' or 'right'? ")
 if direction.lower() == "left":
