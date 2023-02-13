@@ -31,8 +31,8 @@ print("Welcome to the Rock, Paper, Scissors game \n")
 while True:
     usr_Input = int(input("Please type 0 for Rock, 1 for Paper or 2 for Scissors: "))
     if usr_Input < 0 or usr_Input > 2:
-        print("You have entered an incorrect option")
-        exit()
+        print("You have entered an invalid number")
+        continue
     com_Input = random.randint(0, 2)
     options = [rock, paper, scissors]
     usr_opt = options[usr_Input]
