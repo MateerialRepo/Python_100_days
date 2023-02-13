@@ -26,19 +26,20 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-
+game_options = [rock, paper, scissors]
 print("Welcome to the Rock, Paper, Scissors game \n")
 while True:
-    usr_Input = int(input("Please type 0 for Rock, 1 for Paper or 2 for Scissors: "))
+    usr_Input = int(input("Please type 0 for Rock, 1 for Paper or 2 for Scissors: \n"))
     if usr_Input < 0 or usr_Input > 2:
         print("You have entered an invalid number")
         continue
-    com_Input = random.randint(0, 2)
-    options = [rock, paper, scissors]
-    usr_opt = options[usr_Input]
-    com_opt = options[com_Input]
+    else:
+        usr_opt = game_options[usr_Input]
+        print(f"You chose:\n {usr_opt}")
 
-    print(f"You chose:\n {usr_opt}")
+    com_Input = random.randint(0, 2)
+    com_opt = game_options[com_Input]
+
     print(f"Computer chose:\n {com_opt}")
 
     if usr_Input == 0 and com_Input == 2:
