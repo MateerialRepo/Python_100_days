@@ -9,6 +9,9 @@ def caesar(input_text, shift_num, action):
   if (action == 'decode'):
     shift_num *= -1
   for letter in input_text:
+    if letter not in alphabet:
+      result += letter
+      continue
     position = alphabet.index(letter)
     new_position = position + shift_num
     result += alphabet[new_position]
