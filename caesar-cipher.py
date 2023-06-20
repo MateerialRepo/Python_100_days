@@ -21,5 +21,7 @@ def encrypt(plain_text, shift_num):
   
 if (direction == 'encode'):
   encrypt(plain_text=text, shift_num=shift)
-else:
+elif (direction == 'decode'):
   decrypt(cipher_text=text, shift_num=shift)
+else:
+  print("Please state if you want to encode or decode your message")
