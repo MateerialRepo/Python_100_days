@@ -9,6 +9,17 @@ def encrypt(plain_text, shift_num):
   for char in plain_text:
     new_index = alphabet.index(char) + shift_num
     cipher_text+=alphabet[new_index]
-  return cipher_text
+  print(f"The encoded text is {cipher_text}")
 
-print(encrypt(text, shift))
+ def decrypt(cipher_text, shift_num)):
+  plain_text = ""
+  for letter in cipher_text:
+    index = alphabet.index(letter)
+    new_index = position - shift_amount
+    plain_text+= alphabet[new_index]
+  print(f"The decoded test is {plain_text}")
+  
+if (direction == 'encode'):
+  encrypt(plain_text=text, shift_num=shift)
+else:
+  decrypt(cipher_text=text, shift_num=shift)
