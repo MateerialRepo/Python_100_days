@@ -17,4 +17,7 @@ def caesar(input_text, shift_num, action):
     result += alphabet[new_position]
   print(f"The {action}d text is {result}")
   
+ if shift > 26:
+  shift = shift%26
+  
  caesar(input_text=text, shift_num=shift, action=direction)
